@@ -14,10 +14,6 @@ from tensorflow.keras.initializers import random_uniform, glorot_uniform, consta
 from tensorflow.python.framework.ops import EagerTensor
 from matplotlib.pyplot import imshow
 
-from test_utils import summary, comparator
-import public_tests
-
-%matplotlib inline
 
 # Identity block : The identity block is the standard block used in ResNets, and corresponds to the 
 # case where the input activation (say a^[l] ) has the same dimension as the output activation (say a^[l+2]).
