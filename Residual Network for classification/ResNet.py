@@ -9,7 +9,7 @@ from tensorflow.keras.applications.resnet_v2 import preprocess_input, decode_pre
 from tensorflow.keras import layers
 from tensorflow.keras.layers import Input, Add, Dense, Activation, ZeroPadding2D, BatchNormalization, Flatten, Conv2D, AveragePooling2D, MaxPooling2D, GlobalMaxPooling2D
 from tensorflow.keras.models import Model, load_model
-from resnets_utils import *
+from helper_codes import *
 from tensorflow.keras.initializers import random_uniform, glorot_uniform, constant, identity
 from tensorflow.python.framework.ops import EagerTensor
 from matplotlib.pyplot import imshow
@@ -262,7 +262,7 @@ print ("Test Accuracy = " + str(preds[1]))
 """
 # Testing the model with our own hand images 
 
-img_path = 'images/my_image.jpg'
+img_path = 'name_of_the_image_file/image_name.jpg'
 img = image.load_img(img_path, target_size=(64, 64))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
