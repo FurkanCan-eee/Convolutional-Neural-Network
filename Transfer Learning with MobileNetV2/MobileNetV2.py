@@ -200,7 +200,8 @@ def alpaca_model(image_shape=IMG_SIZE, data_augmentation=data_augmenter()):
     model = tf.keras.Model(inputs, outputs)
     
     return model
-  
+
+data_augmentation = data_augmenter()
 model2 = alpaca_model(IMG_SIZE, data_augmentation)
 
 # Compiling the model
